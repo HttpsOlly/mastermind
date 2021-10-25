@@ -1,0 +1,115 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.entire-board {
+    height: 70vh;
+    width: 100vw;
+    border: red 1vw solid;
+    display: flex;
+    flex-direction: row;
+}
+
+#cell-container {
+    width: 80vw;
+    height: 69vh;
+    border: fuchsia 1vw solid;
+    background-color: #837373;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
+    display: grid;
+}
+
+.cell {
+    background-color: white;
+    border-radius: 50%;
+    border: white 1vw solid;
+    height: 11vw;
+    width: 11vw;
+    place-self: center;
+}
+
+#peg-container {
+    width: 20vw;
+    height: 69vh;
+    border: gray 1vw solid;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(16, auto);
+    justify-content: space-evenly;
+}
+.peg {
+    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(4, 5vw);
+    border-radius: 50%;
+    border: white 1vw solid;
+    background-color: white;
+    height: 3.5vw;
+    width: 3.5vw;
+    align-self: center;
+}
+
+.other {
+    width: 100vw;
+    height: 10vh;
+    border: green 1vw solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.current-color {
+    width: 15vw;
+    height: 9vh;
+    border: yellowgreen 1vw solid;
+}
+
+.secret-code {
+    width: 70vw;
+    height: 9vh;
+    border: yellowgreen 1vw solid;
+    display: flex;
+    background-color: azure;
+}
+
+.submit {
+    width: 15vw;
+    height: 9vh;
+    border: yellowgreen 1vw solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.secret-color {
+    width: -webkit-fill-available;
+}
+
+.palette {
+    width: 100vw;
+    height: 18.5vh;
+    border: dodgerblue 1vw solid;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
